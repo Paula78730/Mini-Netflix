@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mini Netflix</title>
+<style>
+body{
+background:black;
+color:white;
+font-family:Arial;
+text-align:center;
+}
+h1{
+color:red;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:10px;
+padding:10px;
+}
+.card{
+background:#111;
+border-radius:10px;
+overflow:hidden;
+transition:0.3s;
+}
+.card:hover{
+transform:scale(1.05);
+}
+img{
+width:100%;
+}
+button{
+background:red;
+color:white;
+border:none;
+padding:10px;
+margin:10px;
+border-radius:5px;
+}
+</style>
+</head>
+<body>
+
+<h1>Mini Netflix</h1>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://image.tmdb.org/t/p/w500/x2LSRK2Cm7MZhjluni1msVJ3wDF.jpg">
+<button onclick="alert('Reproduciendo...')">Ver</button>
+</div>
+
+<div class="card">
+<img src="https://image.tmdb.org/t/p/w500/ggFHVNu6YYI5L9pCfOacjizRGt.jpg">
+<button onclick="alert('Reproduciendo...')">Ver</button>
+</div>
+
+<div class="card">
+<img src="https://image.tmdb.org/t/p/w500/rTmal9fDbwh5F0waol2hq35U4ah.jpg">
+<button onclick="alert('Reproduciendo...')">Ver</button>
+</div>
+
+<div class="card">
+<img src="https://image.tmdb.org/t/p/w500/9PFonBhy4cQy7Jz20NpMygczOkv.jpg">
+<button onclick="alert('Reproduciendo...')">Ver</button>
+</div>
+
+</div>
+
+</body>
+</html>
